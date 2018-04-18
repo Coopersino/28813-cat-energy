@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
 </head>
-
 <body>
   <header class="page-header">
-    <nav class="main-nav">
-      <a href="index.html" class="page-header__logo">
-        <img src="http://placehold.it/33x38" width="33" height="38" alt="Кэт энерджи" class="page-header__logo-image">
-      </a>
-      <img class="page-header__header" src="http://placehold.it/101x18" width="101" height="18" alt="cat energy">
-      <nav class="main-nav  main-nav--closed  main-nav--nojs">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper"></div>
+    <a href="index.html" class="page-header__logo">
+      <img src="http://placehold.it/33x38" width="33" height="38" alt="Кэт энерджи" class="page-header__logo-image">
+    </a>
+    <img class="page-header__header" src="http://placehold.it/101x18" width="101" height="18" alt="cat energy">
+    <nav class="main-nav  main-nav--closed  main-nav--nojs">
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
             <a href="index.html">главная</a>
@@ -27,35 +24,31 @@
             <a href="form.html">подбор программы</a>
           </li>
         </ul>
-        </div>
-      </nav>
+      </div>
+    </nav>
   </header>
   <main class="page-main">
     <section class="page-main__slogan">
       <h1>Подбор программы</h1>
       <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
     </section>
-
     <form class="programm-form" action="https://echo.htmlacademy.ru" name="programm-form" method="post">
-
       <fieldset class="feedback-form__fieldset">
         <label for="name">Имя:*</label>
-        <input type="text" name="Name" id="name" value="Барсик">
+        <input type="text" name="name" id="name" value="Барсик">
         <label for="weight">Вес (кг):*</label>
-        <input type="text" name="Weight" id="weight" value="7">
+        <input type="text" name="weight" id="weight" value="7">
         <label for="age">Возраст (лет):</label>
-        <input type="text" name="Age" id="age" value="7">
+        <input type="text" name="age" id="age" value="7">
       </fieldset>
-
       <fieldset class="feedback-form__goal">
         <input class="input-radio" type="radio" id="weight-loose" name="goal" value="weight-loose" checked>
         <label class="label-radio" for="weight-loose">похудение</label>
         <input class="input-radio" type="radio" id="gain-weight" name="goal" value="gain-weight">
-        <label class="label-radio" for="negative">набор массы</label>
-        <input class="input-radio" type="radio" id="no-answer" name="goal" value="no-answer">
-        <label class="label-radio" for="no-answer">не знаю (нужен ваш совет)</label>
+        <label class="label-radio" for="gain-weight">набор массы</label>
+        <input class="input-radio" type="radio" id="need-advice" name="goal" value="need-advice">
+        <label class="label-radio" for="need-advice">не знаю (нужен ваш совет)</label>
       </fieldset>
-
       <fieldset class="programm-form__contact-info">
         <h2 class="programm-form__name">Контактные данны (владельца кота)</h2>
         <label class="input-label" for="email">email:*</label>
@@ -63,73 +56,68 @@
         <label class="label" for="phone">телефон:*</label>
         <input class="text text--phone" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{7}" placeholder="8(960)900-60-90">
       </fieldset>
-
       <fieldset class="programm-form__comment">
         <h2 class="feedback-form__name">Комментарий</h2>
         <textarea name="comment" id="comment-field" rows="10">Расскажите обо всех повадках кота</textarea>
       </fieldset>
-
       <fieldset class="programm-form__extra">
         <h2 class="feedback-form__name">Дополнительно</h2>
         <div class="feedback-form__item">
-          <input class="feedback-form__checkbox" type="checkbox" id="chbx1" name="chbx1" checked>
-          <label class="feedback-form__checkbox" for="chbx1">Сахарозаменитель</label>
+          <input class="feedback-form__checkbox" type="checkbox" id="chbx-sweetener" name="chbx-sweetener" checked>
+          <label class="feedback-form__checkbox" for="chbx-sweetener">Сахарозаменитель</label>
         </div>
         <div class="feedback-form__item">
-          <input class="feedback-form__checkbox" type="checkbox" id="chbx2" name="chbx2">
-          <label class="feedback-form__checkbox" for="chbx2">Питьевая вода</label>
+          <input class="feedback-form__checkbox" type="checkbox" id="chbx-water" name="chbx-water">
+          <label class="feedback-form__checkbox" for="chbx-water">Питьевая вода</label>
         </div>
         <div class="feedback-form__item">
-          <input class="feedback-form__checkbox" type="checkbox" id="chbx3" name="chbx3">
-          <label class="feedback-form__checkbox" for="chbx3">Молоко</label>
+          <input class="feedback-form__checkbox" type="checkbox" id="milk-chbx" name="milk-chbx">
+          <label class="feedback-form__checkbox" for="milk-chbx">Молоко</label>
         </div>
         <div class="feedback-form__item">
-          <input class="feedback-form__checkbox" type="checkbox" id="chbx4" name="chbx4">
-          <label class="feedback-form__checkbox" for="chbx4">Витамины</label>
+          <input class="feedback-form__checkbox" type="checkbox" id="milk-vitamin" name="milk-vitamin">
+          <label class="feedback-form__checkbox" for="milk-vitamin">Витамины</label>
         </div>
       </fieldset>
-
       <input type="submit" value="Отправить отзыв">
       <p class="feedback-form__fields">* — Обязательные поля</p>
-
     </form>
-
   </main>
-
-  <footer class="page-footer  wrapper">
-    <div class="collaboration">
-      <span class="collaboration-item collaboration-item--slogan">приглашаем к сотрудничеству дилеров!</span>
-      <span class="collaboration-item collaboration-item--address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-    </div>
-    <section class="map-holder">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523812411001"
-        width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </section>
-    <div class="page-footer logo">
-      <img src="http://placehold.it/27x34" width="128" height="34" alt="cat-energy-logo" class="cat-energy-logo">
-    </div>
-    <div class="social-icons">
-      <ul>
-        <li>
-          <a href="#" class="social-link  social-link--vkontakte">vkontakte</a>
-        </li>
-        <li>
-          <a href="#" class="social-link  social-link--instagram">instagram</a>
-        </li>
-        <li>
-          <a href="#" class="social-link  social-link--facebook">facebook</a>
-        </li>
-      </ul>
-    </div>
-    <div class="copyright">
-      <a href="https://htmlacademy.ru/" class="copyright">
-        HTML Academy
-      </a>
-      <a href="https://htmlacademy.ru/" class="copyright">
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <section class="collaboration">
+        <div class="collaboration__slogan-block">
+          <h3 class="collaboration__slogan">приглашаем к сотрудничеству дилеров!</h3>
+        </div>
+        <div class="collaboration__address-block">
+          <span class="collaboration__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+        </div>
+      </section>
+      <section class="map-holder">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523812411001"
+          width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </section>
+      <div class="page-footer logo">
+        <img src="http://placehold.it/27x34" width="128" height="34" alt="cat-energy-logo" class="cat-energy-logo">
+      </div>
+      <div class="social-links">
+        <ul class="social-links__list">
+          <li class="social-links__item">
+            <a href="#" class="social-link social-link--vkontakte">vkontakte</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-link social-link--instagram">instagram</a>
+          </li>
+          <li class="social-links__item">
+            <a href="#" class="social-link social-link--facebook">facebook</a>
+          </li>
+        </ul>
+      </div>
+      <div class="copyright">
+        <a href="https://htmlacademy.ru/" class="copyright">HTML Academy</a>
         <img src="http://placehold.it/27x34" width="27" height="34" alt="HTMLACADEMY-logo" class="copyright__logo">
-      </a>
+      </div>
     </div>
   </footer>
 </body>
-
 </html>
