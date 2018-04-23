@@ -1,20 +1,27 @@
-body{
-  background: #fff;
+body {
+  background: $white;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Oswald";
+  font-weight: 100;
 }
+
 img {
   border: 0;
   display: block;
 }
+
 li {
   list-style-type: none;
- }
- ul {
+}
+
+ul {
   margin-left: 0;
   padding-left: 0;
- }
-.wrapper{
+}
+
+.wrapper {
+  border: solid 1px black;
   @include container();
   @include clearfix();
 }
