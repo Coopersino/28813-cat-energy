@@ -2,6 +2,7 @@
   padding-left: 20px;
   padding-right: 20px;
 }
+
 .options__item {
   @include clearfix();
   background-color: $grey;
@@ -12,13 +13,16 @@
   float: right;
   min-width: 70%;
 }
+
 .options__title-block {
   @include clearfix();
 }
+
 .options__link {
   text-transform: uppercase;
   float: left;
 }
+
 .options__text {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -26,9 +30,11 @@
   border-bottom: solid 1px black;
   float: left;
 }
+
 .options__img {
   float: left;
 }
+
 .options__pic {
   float: left;
   width: 50px;
