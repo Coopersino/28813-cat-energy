@@ -1,0 +1,27 @@
+body {
+  background: $white;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Oswald", "Tahoma", sans-serif;
+  font-weight: 100;
+}
+
+img {
+  border: 0;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.wrapper {
+  @include container();
+  @include clearfix();
+  border: solid 1px black;
+}
