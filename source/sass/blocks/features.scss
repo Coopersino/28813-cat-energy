@@ -10,3 +10,27 @@
   width: 60px;
   height: 60px;
 }
+
+@media ($tablet-widths) {
+  .features {
+    min-height: 780px;
+  }
+
+  .features__title {
+    font-size: 60px;
+  }
+
+  .features__item {
+    width: 50%;
+    display: block;
+    float: left;
+    min-height: 235px;
+  }
+}
+
+@media ($desktop-widths) {
+  .features__item {
+    width: 20%;
+    display: inline-block;
+  }
+}

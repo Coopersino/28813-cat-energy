@@ -42,3 +42,24 @@
   border-radius: 50%;
   background-color: $green;
 }
+
+@media ($tablet-widths) {
+  .options {
+    min-height: 770px;
+  }
+
+  .options__title {
+    font-size: 36px;
+  }
+}
+
+@media ($desktop-widths) {
+  .options {
+    min-height: 370px;
+  }
+
+  .options__item {
+    width: 45%;
+    display: inline-block;
+  }
+}

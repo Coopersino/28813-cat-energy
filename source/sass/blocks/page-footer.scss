@@ -1,3 +1,37 @@
 .page-footer {
   border: solid black 1px;
 }
+
+.page-footer__wrapper {
+  @include clearfix();
+  border: solid black 1px;
+}
+
+.page-footer__logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.copyright {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and ($tablet-widths) {
+  .page-footer__logo {
+    float: left;
+    width: 30%;
+  }
+
+  .social-links {
+    float: left;
+    width: 40%;
+  }
+
+  .copyright {
+    float: left;
+    width: 30%;
+  }
+}

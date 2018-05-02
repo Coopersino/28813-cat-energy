@@ -1,3 +1,13 @@
-.page-footer {
+.page-header {
+  @include clearfix();
   border: black solid 1px;
+  width: 100%;
+  display: block;
+}
+
+@media ($tablet-widths) {
+  .page-header__logo {
+    width: 20%;
+    float: left;
+  }
 }
