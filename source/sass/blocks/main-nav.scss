@@ -1,3 +1,72 @@
 .main-nav {
-  border: solid 1px black;
+  text-align: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.main-nav__list {
+  margin: 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  border-top: 1px solid black;
+}
+
+.main-nav__toggle {
+  height: 26px;
+  width: 26px;
+  position: relative;
+  margin-top: -32px;
+  float: right;
+  right: 20px;
+  font-size: 0;
+  line-height: 0;
+  background: url("../img/icon-mobile-menu.svg") no-repeat 50% 50%;
+  background-color: transparent;
+  border: none;
+}
+
+.main-nav__link {
+  cursor: pointer;
+  display: block;
+  padding: 18px 20px;
+  text-decoration: none;
+}
+
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
+
+.main-nav--opened .main-nav__toggle {
+  background: url("../img/icon-close.svg") no-repeat 50% 50%;
+}
+
+@media ($tablet-widths) {
+  .main-nav--closed .main-nav__wrapper {
+    display: block;
+  }
+
+  .main-nav__wrapper {
+    @include clearfix();
+    float: right;
+    display: block;
+    width: 100%;
+  }
+
+  .main-nav {
+    font-size: 18px;
+    float: right;
+    display: block;
+  }
+
+  .main-nav__item {
+    width: 30%;
+    float: left;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
 }

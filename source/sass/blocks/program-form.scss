@@ -1,0 +1,79 @@
+.program-form__fieldset {
+  @include clearfix();
+}
+
+.program-form__name {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.program-form__weight {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.program-form__age {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.program-form__email {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.program-form__phone {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.program-form__field {
+  width: 100%;
+}
+
+@media ($tablet-widths) {
+  .program-form__item {
+    width: 40%;
+  }
+
+  .program-form__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 34px;
+    text-align: left;
+  }
+}
+
+@media ($desktop-widths) {
+  .program-form__list {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .program-form__item {
+    margin-bottom: 51px;
+    margin-left: 0;
+    width: auto;
+  }
+
+  .program-form__fieldset {
+    align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}

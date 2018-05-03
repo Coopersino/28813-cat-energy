@@ -17,6 +17,46 @@
 }
 
 .additional-goods__item {
+  @include clearfix();
   padding-bottom: 20px;
   border-bottom: 1px solid grey;
+  display: block;
+}
+
+.additional-goods__desc {
+  width: 100%;
+}
+
+.additional-goods__weight {
+  float: left;
+}
+
+@media ($tablet-widths) {
+  .additional-goods__section-tetile {
+    font-size: 36px;
+  }
+
+  .additional-goods__title {
+    float: left;
+    width: 70%;
+  }
+
+  .additional-goods__desc {
+    float: right;
+    width: 30%;
+  }
+
+  .additional-goods__weight {
+    float: left;
+  }
+
+  .additional-goods__price {
+    float: right;
+  }
+
+  .additional-goods__item .btn {
+    display: block;
+    float: left;
+    width: 100%;
+  }
 }

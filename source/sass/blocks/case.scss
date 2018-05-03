@@ -11,3 +11,13 @@
 .case__feature {
   text-transform: uppercase;
 }
+
+@media ($tablet-widths) {
+  .case {
+    min-height: 1078px;
+  }
+
+  .case__title {
+    font-size: 60px;
+  }
+}
