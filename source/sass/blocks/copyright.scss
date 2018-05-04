@@ -1,0 +1,27 @@
+.copyright__icon {
+  fill: #666666;
+}
+
+.copyright__link {
+  display: flex;
+  text-align: center;
+  width: 150px;
+  text-decoration: none;
+  color: #444444;
+}
+
+.copyright-logo__block {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-start;
+  width: 42px;
+  height: 42px;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
