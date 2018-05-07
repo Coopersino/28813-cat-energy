@@ -3,25 +3,44 @@
 }
 
 .copyright__link {
-  display: flex;
-  text-align: center;
-  width: 150px;
+  // display: flex;
+  // text-align: center;
+  // // width: 150px;
   text-decoration: none;
-  color: #444444;
+  // // color: #444444;
+  // margin: 0;
+  // font-family: "Arial", sans-serif;
+  // font-size: 16px;
+  // line-height: 16px;
+  // color: #444444;
+
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.copyright-logo__block {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: flex-start;
-  width: 42px;
-  height: 42px;
-}
+// .copyright-logo__block {
+//   display: flex;
+//   justify-content: center;
+//   text-align: center;
+//   align-items: flex-start;
+//   width: 42px;
+//   height: 42px;
+// }
 
 .copyright {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 20px;
+  // display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+  // padding-bottom: 20px;
+  padding: 21px 0;
+}
+
+.copyright__text {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
 }

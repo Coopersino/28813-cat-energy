@@ -1,26 +1,71 @@
-.additional-goods__wrapper {
+.additional-goods {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.additional-goods::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 0;
+  z-index: -1;
+  height: 3px;
+  width: 100%;
+  background-image: linear-gradient(to right, transparent 32%, #68b738 0);
+}
+
+.additional-goods__block {
   padding-left: 20px;
   padding-right: 20px;
 }
 
 .additional-goods__title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding-bottom: 34px;
+  width: 247px;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #111111;
+  background-color: #ffffff;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.additional-goods-item__title {
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
   text-transform: uppercase;
+  color: #222222;
+}
+
+.additional-goods__options {
+  width: 100%;
+  margin-bottom: 14px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  border-collapse: collapse;
 }
 
 .additional-goods__price {
-  float: right;
+  text-align: right;
 }
 
 .additional-goods__list {
-  padding-top: 20px;
-  border-top: 1px solid grey;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 39px;
 }
 
 .additional-goods__item {
-  @include clearfix();
-  padding-bottom: 20px;
-  border-bottom: 1px solid grey;
-  display: block;
+  margin-bottom: 13px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .additional-goods__desc {
@@ -32,13 +77,24 @@
 }
 
 @media ($tablet-widths) {
+  .additional-goods::after {
+    top: 22px;
+    background-image: none;
+    background-color: #68b738;
+  }
+
   .additional-goods__section-tetile {
     font-size: 36px;
   }
 
   .additional-goods__title {
-    float: left;
-    width: 70%;
+    margin-bottom: 80px;
+    padding: 0;
+    padding-left: 37px;
+    width: 411px;
+    font-size: 36px;
+    line-height: 36px;
+    border: none;
   }
 
   .additional-goods__desc {
@@ -58,5 +114,34 @@
     display: block;
     float: left;
     width: 100%;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
+  }
+
+  .additional-goods__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 27px;
+    padding-left: 37px;
+    padding-right: 36px;
+    border: 1px solid #d9d9d9;
+  }
+
+  .additional-goods-item__title {
+    margin-bottom: 27px;
+    margin-right: auto;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .additional-goods__options {
+    margin: 0;
+    width: 230px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }

@@ -1,9 +1,8 @@
 .features {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 45px;
 }
 
-.features__text{
+.features__text {
   margin: 0;
   font-family: "Arial", sans-serif;
 }
@@ -14,6 +13,106 @@
   background-color: $green;
   width: 60px;
   height: 60px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 27px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+}
+
+.features__item {
+  position: relative;
+  margin-bottom: 23px;
+  padding-top: 3px;
+  padding-left: 80px;
+}
+
+.features__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+}
+
+.features__item--only_one_month::before {
+  background-image: url"(../img/advantage-clock@1x.png)";
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--meal::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--dust::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.features__item--useful::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.case__feature--horizontal-title {
+  padding-top: 32px;
+  padding-right: 31px;
+  caption-side: bottom;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.case__feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 30px;
+  width: 124px;
+  height: 56px;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #111111;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.case__otion-list tr {
+  position: relative;
+  display: flex;
+}
+
+.case__otion-list th {
+  position: absolute;
+  width: 80px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  text-align: center;
+  color: #444444;
+  background-color: #f2f2f2;
+}
+
+.case__feature--time {
+  bottom: -14px;
+  left: 19px;
+}
+
+.case__feature--weight {
+  bottom: -14px;
+  right: 52px;
 }
 
 @media ($tablet-widths) {

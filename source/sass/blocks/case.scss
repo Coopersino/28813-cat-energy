@@ -1,5 +1,5 @@
 .case {
-  background-color:$grey;
+  background-color: $grey;
   padding-bottom: 36px;
 }
 
@@ -38,6 +38,7 @@
   margin-bottom: 35px;
   padding: 0 20px;
 }
+
 @media ($tablet-widths) {
   .case {
     min-height: 1078px;

@@ -1,23 +1,91 @@
 .products {
-  border: 1px solid black;
+  margin-bottom: 28px;
+  padding: 0;
+}
+
+.products__title {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0 20px;
+  padding-bottom: 28px;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  color: #111111;
+  border-bottom: 1px solid #ededed;
+}
+
+.product__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #ededed;
+}
+
+.product__pic {
+  display: flex;
+  width: 140px;
+  height: 144px;
+}
+
+.product__img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product__desc {
+  margin-top: 20px;
+  width: 140px;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 14px;
+  width: 77px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.product__options {
+  width: 100%;
+  border-collapse: collapse;
+
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__field {
+  padding: 0;
+  font-weight: 400;
+  text-align: left;
+}
+
+.product__value {
+  padding: 0;
+  text-align: right;
+}
+
+.product--btn {
+  padding: 10px 0;
+}
+
+.product__item--plus-100500 {
+  position: relative;
+  padding-top: 79px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #ededed;
 }
 
 .products__wrapper {
   @include clearfix();
-}
-
-.product__item {
-  display: block;
-  float: left;
-  width: auto;
-  border-bottom: 1px solid #ededed;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-.product__title {
-  text-transform: uppercase;
 }
 
 .left-block {
@@ -31,18 +99,6 @@
 .product__item-wrapper {
   @include clearfix();
   width: 100%;
-}
-
-.product__desc {
-  float: left;
-  width: 50%;
-  padding-bottom: 20px;
-}
-
-.product__pic {
-  float: left;
-  width: 50%;
-  padding-bottom: 20px;
 }
 
 .product__volume {
@@ -64,6 +120,26 @@
 }
 
 @media ($tablet-widths) {
+  .products {
+    margin-bottom: 6px;
+    padding: 0 30px;
+  }
+
+  .products__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .products__title {
+    margin: 0;
+    margin-bottom: 86px;
+    padding: 0;
+    font-size: 60px;
+    border: none;
+  }
+
   .product__item {
     margin-right: 30px;
     margin-bottom: 30px;

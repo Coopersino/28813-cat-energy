@@ -1,0 +1,49 @@
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider__toggle-text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.slider__scale {
+  margin-top: 0;
+  margin-left: 18px;
+  margin-right: 18px;
+  margin-bottom: 0;
+}
+
+.slider__toggle--left {
+  margin-right: -4px;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.slider__toggle {
+  position: relative;
+  width: 43px;
+  height: 14px;
+  border: 1px solid #cdcdcd;
+}
+
+.slider__toggle--active::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border-radius: 5px;
+}
+
+.slider__toggle--right {
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+}

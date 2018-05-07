@@ -2,11 +2,16 @@ html {
   box-sizing: border-box;
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   background: $white;
   margin-left: auto;
   margin-right: auto;
-  // font-family: $font-family;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -25,6 +30,7 @@ li {
 ul {
   margin-left: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 .container {

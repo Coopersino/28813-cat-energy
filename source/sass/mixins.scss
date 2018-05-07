@@ -24,3 +24,9 @@
     width: 1434px;
   }
 }
+
+@media ($tablet-widths) {
+  .container {
+    width: 768px;
+  }
+}

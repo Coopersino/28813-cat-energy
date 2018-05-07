@@ -4,11 +4,42 @@
 }
 
 .plus-100500__title {
+  // text-transform: uppercase;
+  // width: 100%;
+
+  display: block;
+  margin-bottom: 8px;
+  text-align: center;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
   text-transform: uppercase;
-  width: 100%;
+  color: #111111;
+}
+
+.plus-100500__slogan {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
 }
 
 .plus-100500__desc {
   width: 100%;
   text-align: center;
+}
+
+.plus-100500__desc::after {
+  content: "";
+  position: absolute;
+  top: 43px;
+  left: 145px;
+  width: 30px;
+  height: 30px;
+  background: url("../img/icon-plus-mobile.svg");
+  opacity: 0.2;
 }
