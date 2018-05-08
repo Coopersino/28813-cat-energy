@@ -33,7 +33,7 @@
   text-align: center;
 }
 
-.plus-100500__desc::after {
+.plus-100500__title::after {
   content: "";
   position: absolute;
   top: 43px;
@@ -42,4 +42,36 @@
   height: 30px;
   background: url("../img/icon-plus-mobile.svg");
   opacity: 0.2;
+}
+
+@media ($tablet-widths) {
+  .plus-100500__title::after {
+    top: 54px;
+    left: 133px;
+    width: 60px;
+    height: 60px;
+    background: url("../img/icon-plus-mobile.svg");
+  }
+
+  .plus-100500__slogan {
+    width: 168px;
+    margin-bottom: 85px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .plus-100500__title {
+    width: 135px;
+    margin-bottom: 26px;
+    font-size: 20px;
+  }
+
+  // .plus-100500__desc {
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  //   padding: 40px;
+  //   padding-top: 163px;
+  //   outline: 1px solid #e6e6e6;
+  // }
 }

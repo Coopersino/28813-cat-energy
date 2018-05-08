@@ -113,3 +113,18 @@
     display: none;
   }
 }
+
+@media ($desktop-widths) {
+  .site-list {
+    width: 480px;
+  }
+
+  .main-nav__item {
+    padding: 8px 0;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    color: #111111;
+  }
+}

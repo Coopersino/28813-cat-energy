@@ -77,6 +77,10 @@
 }
 
 @media ($tablet-widths) {
+  .additional-goods {
+    margin-bottom: 76px;
+  }
+
   .additional-goods::after {
     top: 22px;
     background-image: none;

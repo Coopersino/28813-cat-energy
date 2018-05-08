@@ -46,8 +46,12 @@
 }
 
 @media ($tablet-widths) {
+  // .collaboration {
+  //   height: 200px;
+  // }
   .collaboration {
-    height: 200px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .collaboration__wrapper {

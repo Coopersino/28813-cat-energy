@@ -1,3 +1,9 @@
 .page-main {
   display: block;
 }
+
+@media ($desktop-widths) {
+  .page-main {
+    position: relative;
+  }
+}
